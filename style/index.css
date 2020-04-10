@@ -41,20 +41,20 @@ time, mark, audio, video {
 /*Header links and information*/
 .navigations{
     margin: 0 10px;
-    border: 1px solid lightgray;
-    padding: 20px;
+    padding: 1%;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 46%;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
+    background-color: cadetblue; 
+}
+
+.navigations nav a:hover{
+    color: pink;
 }
 
 .HeaderContent{
     background-color: beige;
-}
-
-.navigations{
-    background-color: cadetblue;
 }
 
 /*Front page Content*/
@@ -62,8 +62,22 @@ time, mark, audio, video {
 .FrontPageContent{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end; 
 }
+
+.ImageOnFrontPage{
+    display: flex;
+    width: 20;
+}
+
+.ImageOnFrontPage img{
+    max-width: 100%;
+}
+
+ .FrontPageContent .ImageOnFrontPage{
+    flex-direction: row;
+}
+
 
 /*First row infomation and images*/
 
@@ -102,4 +116,25 @@ time, mark, audio, video {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*Responsive Design*/
+
+/*Tablet*/
+@media(max-width: 800px){
+    
+        a {
+            font-size: 2rem;
+        
+    }
+
+}
+
+/*Phone*/
+@media(max-width: 500px){
+
+        a{
+            width: 100%;
+            font-size: 1.6rem;
+    }
 }
