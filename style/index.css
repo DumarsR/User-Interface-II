@@ -16,7 +16,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 1px solid grey;  
+/* border: 1px solid grey;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -31,6 +31,23 @@ h1{
     font-size: 250%;
 }
 
+.navigations{
+    padding: 1rem;
+    
+}
+
+.navigations a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    padding: 1.5%;
+}
+
+.navigations a:hover {
+    background: black;
+    color: white;
+}
+
 
 
 .ImgRowSection{
@@ -38,7 +55,24 @@ h1{
     flex-direction: row;
 }
 
-.ImgRowSection img{
-    width: auto;
-    height: auto;
+
+
+
+
+footer{
+    background-color: grey;
+    padding:2rem;
+}
+
+footer a{
+    text-decoration: none;
+    border: 1px solid black;
+    color:black;
+    background: white;
+    padding: 1.5%;
+}
+
+footer a:hover{
+    background: black;
+    color: white;
 }
